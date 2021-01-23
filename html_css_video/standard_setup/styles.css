@@ -1,0 +1,15 @@
+/* styles.css */
+
+#title {
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.red-text {
+  color: red;
+}
