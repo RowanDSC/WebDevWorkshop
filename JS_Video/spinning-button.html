@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spinning JavaScript Button</title>
+    <link rel="stylesheet" href="spinningbutton.css" />
+  </head>
+  <body>
+    <button onmousedown="changeColor(this)">JavaScript</button>
+    <script>
+      function changeColor(button) {
+        document.getElementsByTagName("body")[0].style.backgroundColor =
+          "#1e1e1e";
+        button.style.backgroundColor = "transparent";
+        button.style.transform = "rotateZ(360deg) translate(-50%, -50%)";
+        button.style.color = "white";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body,
+html {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #4d4d4d;
+}
+#logo {
+  background-color: #f7df1e;
+  height: 100px;
+  width: 100px;
+  padding-right: 7px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  color: #4d4d4d;
+  position: absolute;
+}

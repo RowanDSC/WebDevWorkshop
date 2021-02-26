@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bouncinglogo.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="logo">JS</div>
+    <script>
+      let logo = document.getElementById("logo");
+      let x = 0;
+      let y = 0;
+      let dx = -1;
+      let dy = -1;
+      let size = logo.clientWidth;
+      setInterval(() => {
+        x += dx;
+        y += dy;
+        if (x <= 0 || x >= document.body.clientWidth - size) {
+          dx *= -1;
+          x += dx;
+        }
+        if (y <= 0 || y >= document.body.clientHeight - size) {
+          dy *= -1;
+          y += dy;
+        }
+        logo.style.marginLeft = x + "px";
+        logo.style.marginTop = y + "px";
+      }, 6);
+    </script>
+  </body>
+</html>
