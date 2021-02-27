@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css_selectors.css" />
+  </head>
+  <body>
+    <div id="outer-box">
+      <div class="section">
+        <h1>Commonly Used Elements</h1>
+        <div class="element-display module">
+          <h2>div</h2>
+          <div>
+            Divs are purely structural elements, generally used for formatting
+            information that is stored in other elements.
+          </div>
+        </div>
+        <div class="element-display module">
+          <h2>p</h2>
+          <p>
+            Paragraphs are used exactly the way you'd expect, to separate
+            paragraphs of text in a document. They of course can be used for
+            anything else as well, but their default behavior suggests that they
+            are to be used as paragraph markers.
+          </p>
+          <p>
+            It's important to note that all of these elements are fully
+            customizable, and most of them don't mean anything except for what
+            their default formatting is. With some quick CSS, you can change all
+            h1 elements into paragraphs and vice versa.
+          </p>
+        </div>
+        <div class="element-display module">
+          <h2>h[n]</h2>
+          <h1>Header n=1</h1>
+          <h2>Header n=2</h2>
+          <h3>Header n=3</h3>
+          <h4>Header n=4</h4>
+          <h5>Header n=5</h5>
+          <h6>Header n=6</h6>
+        </div>
+        <div class="element-display module">
+          <h2>a</h2>
+          <a href="#">
+            a stands for "anchor", but really this is just a hyperlink.
+          </a>
+          <br />
+          <a href="#">The href property decides where it leads.</a>
+        </div>
+        <div class="element-display module">
+          <h2>br /</h2>
+          <p>br / makes a new line in the document</p>
+          <p>
+            The / indicates that this is a "self closing tag," meaning that it
+            does not ever have a body and therefore doesn't need a closing
+            tag<br />
+            (&lt;br /&gt; is the same thing as &lt;br&gt;&lt;/br&gt;).
+          </p>
+        </div>
+        <div class="element-display module">
+          <h2>img</h2>
+          <img src="css.png" />
+        </div>
+        <div class="element-display module">
+          <h2>whatever-you-want</h2>
+          <whatever-you-want>
+            Though it is not recommended to do this, css is able to find an
+            element with any name and define its style.
+          </whatever-you-want>
+        </div>
+      </div>
+      <div class="section">
+        <h1>CSS Selector Examples</h1>
+        <div class="selector-example module">
+          <h2>*</h2>
+          <p>Selects every single element</p>
+        </div>
+        <div class="selector-example module">
+          <h2>div</h2>
+          <p>Select all div elements</p>
+        </div>
+        <div class="selector-example module">
+          <h2>p, h1</h2>
+          <p>Select all paragraph elements and all h1 elements</p>
+        </div>
+        <div class="selector-example module">
+          <h2>.class</h2>
+          <p>Select all elements with class name "class"</p>
+        </div>
+        <div class="selector-example module">
+          <h2>#id</h2>
+          <p>Select a SINGLE element with the id "id"</p>
+        </div>
+        <div class="selector-example module">
+          <h2>div > h1</h2>
+          <p>Select every h1 element whose parent is a div</p>
+        </div>
+        <div class="selector-example module">
+          <h2>*:first-child</h2>
+          <p>Select all elements who are the first child of their parent</p>
+        </div>
+        <div class="selector-example module">
+          <h2>div.element > h2:first-child</h2>
+          <p>
+            Select all h2 elements who are the first child of a div with class
+            "element"
+          </p>
+        </div>
+        <div class="selector-example module">
+          <h2>div::before</h2>
+          <p>Select the space before every div element</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

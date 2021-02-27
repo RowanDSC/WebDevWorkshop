@@ -1,0 +1,49 @@
+html,
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.module {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  max-width: 400px;
+}
+
+.element-display {
+  background-color: lightblue;
+}
+
+.selector-example {
+  background-color: lightgreen;
+}
+
+.module > h2:first-child {
+  background-color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section > h1:first-child {
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.element-display > h2:first-child::before {
+  content: "<";
+}
+.element-display > h2:first-child::after {
+  content: ">";
+}
